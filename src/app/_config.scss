@@ -1,0 +1,6 @@
+$primary-color: rgb(25, 75, 150);
+$secondary-color: rgb(25, 100, 125);
+
+@mixin transition-ease {
+  transition: all 0.5s ease-in-out;
+}

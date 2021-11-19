@@ -1,0 +1,33 @@
+@import "../../../config";
+
+button {
+  border-radius: 0.3rem;
+  padding: 0.2rem;
+  background: linear-gradient(
+    to bottom,
+    rgba($primary-color, 0.9),
+    rgba($secondary-color, 0.5)
+  );
+  border-top: solid 2px #777;
+  border-left: solid 2px #777;
+  border-right: solid 2px #333;
+  border-bottom: solid 2px #333;
+  color: #f7f7f7;
+  font-size: 0.33rem;
+  @include transition-ease;
+
+  &:hover {
+    background: linear-gradient(
+      to bottom,
+      rgba($primary-color, 1),
+      rgba($secondary-color, 1)
+    );
+    color: #aef;
+    cursor: pointer;
+    border-top: solid 2px #37a;
+    border-left: solid 2px #37a;
+    border-right: solid 2px #148;
+    border-bottom: solid 2px #148;
+    @include transition-ease;
+  }
+}
