@@ -1,6 +1,13 @@
 <div class="big-blue-sky">
   <div class="big-blue-sky__main">
+    <div
+      [ngClass]="{ 'black-overlay': true, 'open-menu': openMenuBtnClicked }"
+    ></div>
     <app-title class="big-blue-sky__main--title" [text]="title"></app-title>
-    <app-button (onClickBtn)="onClick()" class="big-blue-sky__main--button" [text]="main__btnText"></app-button>
+    <app-button
+      [ngClass]="{ 'big-blue-sky__main--button': true, 'open-menu-btn': openMenuBtnClicked }"
+      (onClickBtn)="onClick()"
+      [text]="main__btnText"
+    ></app-button>
   </div>
 </div>
