@@ -8,4 +8,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Big Blue Sky';
   main__btnText = 'Open Menu';
+  on = false;
+
+  onClick() {
+    this.on = !this.on;
+  }
 }
