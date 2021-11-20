@@ -3,14 +3,15 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
   title = 'Big Blue Sky';
   main__btnText = 'Open Menu';
-  on = false;
+  openMenuBtnClicked = false;
 
   onClick() {
-    this.on = !this.on;
+    this.openMenuBtnClicked = !this.openMenuBtnClicked;
+    this.main__btnText = this.openMenuBtnClicked ? 'Close Menu' : 'Open Menu';
   }
 }
