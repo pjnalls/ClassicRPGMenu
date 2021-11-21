@@ -9,6 +9,7 @@ import { MenuItemComponent } from './components/menu/menu-item/menu-item.compone
 import { MenuListComponent } from './components/menu/menu-list/menu-list.component';
 import { MenuItemViewerComponent } from './components/menu/menu-item-viewer/menu-item-viewer.component';
 import { ClockComponent } from './components/menu/clock/clock.component';
+import { LocationComponent } from './components/menu/location/location.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ClockComponent } from './components/menu/clock/clock.component';
     MenuItemComponent,
     MenuListComponent,
     MenuItemViewerComponent,
-    ClockComponent
+    ClockComponent,
+    LocationComponent
   ],
   imports: [
     BrowserModule,

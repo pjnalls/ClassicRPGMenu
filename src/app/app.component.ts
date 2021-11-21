@@ -6,10 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'Big Blue Sky';
-  main__btnText = 'Open Menu';
-  openMenuBtnClicked = false;
-  toggleBlackBackground = false;
+  title: string = 'Big Blue Sky';
+  main__btnText: string = 'Open Menu';
+  location: string = 'Int\'l Airship Docks';
+  openMenuBtnClicked: boolean = false;
+  toggleBlackBackground: boolean = false;
 
   onClick() {
     this.openMenuBtnClicked = !this.openMenuBtnClicked;

@@ -42,7 +42,7 @@
       @include transition-ease;
     }
     .open-menu-btn {
-      top: 33vh !important;
+      top: calc(33vh - 7rem) !important;
       @include transition-ease;
     }
   }
@@ -63,11 +63,11 @@
   .menu {
     position: absolute;
     z-index: 3;
-    top: 27.5%;
+    top: 25%;
     left: 0;
     &__clock {
       left: -200%;
-      top: 12.5vh;
+      top: 5.5rem;
       position: relative;
       z-index: 5;
       @include transition-ease;
@@ -75,12 +75,20 @@
 
     &__menu-list {
       top: 100vh;
-      left: calc(45vw + 7.5rem);
+      left: calc(45vw + 5.5rem);
       position: relative;
       z-index: 4;
       @include transition-ease;
     }
     
+    &__location {
+      bottom: 100vh;
+      position: relative;
+      z-index: 4;
+      left: calc(45vw + 5.5rem);
+      @include transition-ease;
+    }
+
     .open-menu-clock {
       left: 45vw;
       @include transition-ease;
@@ -89,6 +97,14 @@
     .open-menu-list {
       top: 0;
       position: relative;
+      @include transition-ease;
+    }
+
+    .open-menu-location {
+      bottom: -2.75rem;
+      position: relative;
+      z-index: 6;
+      left: calc(45vw - 5.5rem);
       @include transition-ease;
     }
   }
