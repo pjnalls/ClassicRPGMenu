@@ -1,0 +1,12 @@
+@import "../../../config", "../../panel";
+
+.menu-list {
+  margin: 0;
+  padding: 1.5rem 7.5rem 1.5rem 1.5rem;
+  width: 0;
+  display: flex;
+  flex-flow: column;
+  align-items: left;
+  justify-content: space-between;
+  white-space: break-spaces;
+}
