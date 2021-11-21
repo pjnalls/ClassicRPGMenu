@@ -10,14 +10,21 @@
     <div class="menu">
       <app-menu-list
         [ngClass]="{
-         'menu__menu-list': true,
+          'menu__menu-list': true,
           'open-menu-list': openMenuBtnClicked
         }"
       >
       </app-menu-list>
+      <app-persona
+        [ngClass]="{
+          'menu__menu-persona': true,
+          'open-menu-persona': openMenuBtnClicked
+        }"
+      >
+      </app-persona>
       <app-location
         [ngClass]="{
-         'menu__location': true,
+          'menu__location': true,
           'open-menu-location': openMenuBtnClicked
         }"
         [location]="location"

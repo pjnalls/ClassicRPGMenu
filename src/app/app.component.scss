@@ -5,6 +5,8 @@
     Cantarell, "Open Sans", "Helvetica Neue";
 
   position: fixed;
+  width: 100vw;
+
   /** Reinforce black background overlay. */
   .toggle-black-background {
     background: #000;
@@ -36,19 +38,25 @@
     &--button {
       font-size: 5rem;
       padding: 0.2rem;
-      z-index: 2;
-      position: relative;
-      top: 0 !important;
+      z-index: 11;
+      right: 0;
+      left: 0;
+      position: absolute;
+      top: 52.5vh !important;
       @include transition-ease;
     }
     .open-menu-btn {
-      top: calc(33vh - 7rem) !important;
+      top: calc(52.5vh + 4em) !important;
       @include transition-ease;
     }
   }
 
   .background-overlay {
-    background: #000;
+    background: linear-gradient(
+      to bottom,
+      rgba($dark, 1),
+      rgba($tertiary-color, 1)
+    );
     height: 100vh;
     width: 100vw;
     overflow: hidden;
@@ -67,7 +75,7 @@
     left: 0;
     &__clock {
       left: -200%;
-      top: 5.5rem;
+      top: 7rem;
       position: relative;
       z-index: 5;
       @include transition-ease;
@@ -85,7 +93,15 @@
       bottom: 100vh;
       position: relative;
       z-index: 4;
-      left: calc(45vw + 5.5rem);
+      left: calc(45vw - 5.5rem);
+      @include transition-ease;
+    }
+
+    &__menu-persona {
+      bottom: -5rem;
+      position: absolute;
+      z-index: -1;
+      right: -1000%;
       @include transition-ease;
     }
 
@@ -95,16 +111,21 @@
     }
 
     .open-menu-list {
-      top: 0;
+      top: -2rem;
       position: relative;
       @include transition-ease;
     }
 
     .open-menu-location {
-      bottom: -2.75rem;
+      bottom: -3.75rem;
       position: relative;
       z-index: 6;
-      left: calc(45vw - 5.5rem);
+      @include transition-ease;
+    }
+
+    .open-menu-persona {
+      right: 0;
+      left: 0;
       @include transition-ease;
     }
   }

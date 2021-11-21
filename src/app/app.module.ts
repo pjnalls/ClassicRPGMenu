@@ -10,6 +10,7 @@ import { MenuListComponent } from './components/menu/menu-list/menu-list.compone
 import { MenuItemViewerComponent } from './components/menu/menu-item-viewer/menu-item-viewer.component';
 import { ClockComponent } from './components/menu/clock/clock.component';
 import { LocationComponent } from './components/menu/location/location.component';
+import { PersonaComponent } from './components/menu/persona/persona.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { LocationComponent } from './components/menu/location/location.component
     MenuListComponent,
     MenuItemViewerComponent,
     ClockComponent,
-    LocationComponent
+    LocationComponent,
+    PersonaComponent
   ],
   imports: [
     BrowserModule,
