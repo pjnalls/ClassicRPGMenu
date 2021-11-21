@@ -15,6 +15,7 @@ export class AppComponent {
     this.openMenuBtnClicked = !this.openMenuBtnClicked;
     this.main__btnText = this.openMenuBtnClicked ? 'Close Menu' : 'Open Menu';
 
+    /** Reinforce black background overlay. */
     if (this.toggleBlackBackground) {
       this.toggleBlackBackground = !this.toggleBlackBackground;
     } else {
