@@ -1,0 +1,15 @@
+.panel {
+  border-radius: 1rem;
+  padding: 0.5rem 0.75rem;
+  background: linear-gradient(
+    to right,
+    rgba($primary-color, 0.8),
+    rgba($secondary-color, 0.8)
+  );
+  border-top: solid 0.5rem #777;
+  border-left: solid 0.5rem #777;
+  border-right: solid 0.5rem #333;
+  border-bottom: solid 0.5rem #333;
+  color: #f7f7f7;
+  @include transition-ease;
+}
