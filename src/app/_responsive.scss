@@ -1,0 +1,29 @@
+@include media-md {
+  .menu-list {
+    padding: 1.5rem 33vw 1.5rem 1.5rem !important;
+  }
+  .persona {
+    width: 90vw !important;
+    margin-left: 5vw !important;
+  }
+}
+
+@include media-lg {
+  .menu-list {
+    padding: 1.5rem 33vw 1.5rem 1.5rem !important;
+  }
+  .persona {
+    width: 70vw !important;
+    margin-left: 15vw !important;
+  }
+}
+
+@include media-xl {
+  .menu-list {
+    padding: 1.5rem 33vw 1.5rem 1.5rem !important;
+  }
+  .persona {
+    width: 60vw !important;
+    margin-left: 20vw !important;
+  }
+}
