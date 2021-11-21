@@ -1,11 +1,18 @@
 <div class="big-blue-sky">
-  <div class="big-blue-sky__main">
+  <div
+    [ngClass]="{
+      'big-blue-sky__main': true,
+      'toggle-black-background': toggleBlackBackground
+    }"
+  >
     <app-title class="big-blue-sky__main--title" [text]="title"></app-title>
     <div class="menu">
-      <app-clock [ngClass]="{
-        'menu__clock': true,
-        'open-menu-clock': openMenuBtnClicked
-      }"></app-clock>
+      <app-clock
+        [ngClass]="{
+          menu__clock: true,
+          'open-menu-clock': openMenuBtnClicked
+        }"
+      ></app-clock>
     </div>
     <app-button
       [ngClass]="{
