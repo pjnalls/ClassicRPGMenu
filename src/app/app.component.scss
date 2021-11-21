@@ -4,6 +4,7 @@
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
     Cantarell, "Open Sans", "Helvetica Neue";
 
+  position: fixed;
   /** Reinforce black background overlay. */
   .toggle-black-background {
     background: #000;
@@ -62,14 +63,32 @@
   .menu {
     position: absolute;
     z-index: 3;
+    top: 27.5%;
+    left: 0;
     &__clock {
       left: -200%;
       top: 12.5vh;
       position: relative;
+      z-index: 5;
       @include transition-ease;
     }
+
+    &__menu-list {
+      top: 100vh;
+      left: calc(45vw + 7.5rem);
+      position: relative;
+      z-index: 4;
+      @include transition-ease;
+    }
+    
     .open-menu-clock {
-      left: 75%;
+      left: 45vw;
+      @include transition-ease;
+    }
+
+    .open-menu-list {
+      top: 0;
+      position: relative;
       @include transition-ease;
     }
   }
