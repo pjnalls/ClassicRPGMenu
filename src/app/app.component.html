@@ -1,13 +1,25 @@
 <div class="big-blue-sky">
   <div class="big-blue-sky__main">
-    <div
-      [ngClass]="{ 'background-overlay': true, 'open-menu': openMenuBtnClicked }"
-    ></div>
     <app-title class="big-blue-sky__main--title" [text]="title"></app-title>
+    <div class="menu">
+      <app-clock [ngClass]="{
+        'menu__clock': true,
+        'open-menu-clock': openMenuBtnClicked
+      }"></app-clock>
+    </div>
     <app-button
-      [ngClass]="{ 'big-blue-sky__main--button': true, 'open-menu-btn': openMenuBtnClicked }"
+      [ngClass]="{
+        'big-blue-sky__main--button': true,
+        'open-menu-btn': openMenuBtnClicked
+      }"
       (onClickBtn)="onClick()"
       [text]="main__btnText"
     ></app-button>
+    <div
+      [ngClass]="{
+        'background-overlay': true,
+        'open-menu': openMenuBtnClicked
+      }"
+    ></div>
   </div>
 </div>

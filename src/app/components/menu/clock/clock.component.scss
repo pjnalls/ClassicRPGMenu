@@ -1,0 +1,46 @@
+@import "../../../config";
+
+.clock {
+  border-radius: 1rem;
+  padding: 0.5rem 0.75rem;
+  background: linear-gradient(
+    to right,
+    rgba($primary-color, 0.8),
+    rgba($secondary-color, 0.8)
+  );
+  border-top: solid 0.5rem #777;
+  border-left: solid 0.5rem #777;
+  border-right: solid 0.5rem #333;
+  border-bottom: solid 0.5rem #333;
+  color: #f7f7f7;
+  font-size: 1.5rem;;
+  @include transition-ease;
+
+  &:hover {
+    background: linear-gradient(
+      to right,
+      rgba($primary-color, 1),
+      rgba($secondary-color, 1)
+    );
+    color: $text-color-secondary;
+    cursor: pointer;
+    border-top: solid 0.5rem $text-color-disabled;
+    border-left: solid 0.5rem $text-color-disabled;
+    border-right: solid 0.5rem $tertiary-color;
+    border-bottom: solid 0.5rem $tertiary-color;
+    @include transition-ease;
+  }
+
+  .time__label, .shel__unit {
+    font-weight: 400;
+    padding-right: 1.5rem;
+  }
+  .time__hours-minutes-seconds, .shel__amount {
+    font-weight: 700;
+  }
+  .time, .shel {
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+  }
+}
