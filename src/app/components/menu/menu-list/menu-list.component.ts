@@ -13,7 +13,7 @@ export class MenuListComponent implements OnInit {
   ngOnInit(): void {
     this.list = [
       'Food',
-      'Hobby',
+      'Hobbies',
       'Skill',
       'Clothes',
       'Status',
