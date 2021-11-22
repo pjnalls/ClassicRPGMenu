@@ -1,20 +1,77 @@
 @include media-md {
-  .menu-list {
-    padding: 1.5rem 33vw 1.5rem 1.5rem !important;
+  .big-blue-sky {
+    .menu-list {
+      padding: 1.5rem 33vw 1.5rem 1.5rem !important;
+    }
+    &__main {
+      &--title {
+        font-size: 10rem !important;
+      }
+    }
+    .menu {
+      top: 25%;
+    }
+    .open-menu-btn {
+      top: calc(52.5vh + 4em) !important;
+    }
+  }
+  button {
+    font-size: 1.25rem;
   }
   .persona {
     width: 90vw !important;
     margin-left: 5vw !important;
+    &__img {
+      width: 20vw !important;
+    }
+  }
+  .lv,
+  .hp,
+  .mp {
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: $text-color-primary;
+  }
+  a,
+  .clock *,
+  .location * {
+    font-size: 1.5rem !important;
   }
 }
 
 @include media-lg {
-  .menu-list {
-    padding: 1.5rem 33vw 1.5rem 1.5rem !important;
+  .big-blue-sky {
+    .menu-list {
+      padding: 1.5rem 33vw 1.5rem 1.5rem !important;
+    }
+    &__main {
+      &--title {
+        font-size: 12.5rem !important;
+      }
+    }
   }
+  button {
+    font-size: 1.5rem !important;
+  }
+
   .persona {
     width: 70vw !important;
     margin-left: 15vw !important;
+    &__img {
+      width: 17.5vw !important;
+    }
+  }
+  a {
+    font-size: 2rem !important;
+  }
+  .clock *,
+  .location {
+    font-size: 1.5rem !important;
+  }
+
+  .clock,
+  .location {
+    width: 20rem !important;
   }
 }
 
@@ -25,5 +82,8 @@
   .persona {
     width: 60vw !important;
     margin-left: 20vw !important;
+  }
+  button {
+    font-size: 2rem !important;
   }
 }
