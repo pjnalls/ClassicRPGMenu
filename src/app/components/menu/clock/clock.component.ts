@@ -18,7 +18,7 @@ export class ClockComponent implements OnInit {
 
     setInterval(() => {
       this.time = this.getTime(date);
-      date = new Date();
+      date.setSeconds(date.getSeconds() + 1);
     }, 1000);
   }
 
