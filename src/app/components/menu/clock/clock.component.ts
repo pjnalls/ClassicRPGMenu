@@ -17,8 +17,12 @@ export class ClockComponent implements OnInit {
     this.shel = '6000';
 
     setInterval(() => {
+      if (date.getMinutes() == 0) {
+        date = new Date();
+      } else {
+        date.setSeconds(date.getSeconds() + 1);
+      }
       this.time = this.getTime(date);
-      date.setSeconds(date.getSeconds() + 1);
     }, 1000);
   }
 
