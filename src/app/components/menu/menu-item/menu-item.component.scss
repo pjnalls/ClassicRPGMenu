@@ -1,7 +1,14 @@
 @import "../../../config", "../../../responsive";
 
-a {
+:host {
   text-align: left;
   padding: 0 0 0 0;
   font-size: 1rem;
+  @include transition-ease;
+}
+
+:host:hover {
+  cursor: pointer;
+  color: $text-color-secondary;
+  @include transition-ease;
 }
